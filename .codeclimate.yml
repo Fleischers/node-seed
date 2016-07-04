@@ -1,0 +1,37 @@
+---
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - javascript
+  markdownlint:
+    enabled: true
+  eslint:
+    enabled: true
+    config:
+      # To use this engine you should have Eslint configs defined.
+      # For example:
+
+      # config: path/to/.eslintrc.yml
+
+      extensions:
+      - .es6
+      - .js
+      - .jsx
+
+  fixme:
+    enabled: true
+    config:
+      strings:
+      - FIXME
+      - TODO
+      - XXX
+ratings:
+  paths:
+  - "**.js"
+  - "**.md"
+  - "**.es6"
+  - "**.jsx"
+exclude_paths:
+- test/
