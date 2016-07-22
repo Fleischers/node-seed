@@ -10,10 +10,7 @@ engines:
   eslint:
     enabled: true
     config:
-      # To use this engine you should have Eslint configs defined.
-      # For example:
-
-      # config: path/to/.eslintrc.yml
+      config: .eslintrc.yml
 
       extensions:
       - .es6
@@ -27,6 +24,7 @@ engines:
       - FIXME
       - TODO
       - XXX
+      - HACK
 ratings:
   paths:
   - "**.js"
